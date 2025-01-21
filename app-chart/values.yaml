@@ -1,0 +1,18 @@
+front:
+  repo: "oran901"
+  image: "casino"
+  tag: "ffff927e93bf9fb9beff2f156c023f504ca0b65a"
+  port: 7000
+  replica: 2
+
+back:
+  image: "redis"
+  tag: "7.4"
+  port: 6379
+  replica: 2
+
+ingress:
+  domain: "oyad.store"
+
+
+environment: "dev"
