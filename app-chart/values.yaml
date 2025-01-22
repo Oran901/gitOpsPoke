@@ -3,7 +3,7 @@ front:
   image: "casino"
   tag: "ffff927e93bf9fb9beff2f156c023f504ca0b65a"
   port: 7000
-  replica: 2
+  replica: 1
 
 back:
   image: "redis"
