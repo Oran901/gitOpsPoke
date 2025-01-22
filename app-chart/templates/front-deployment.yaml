@@ -21,6 +21,5 @@ spec:
           ports:
             - containerPort: 7000
               protocol: TCP
-          env:
-            - name: API_URL
-              value: "https://api.{{ .Values.ingress.domain }}"
+        - name: {{ .Values.back.image }}-pod
+          image: {{ .Values.back.image }}:{{ .Values.back.tag }}
